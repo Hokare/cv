@@ -1,14 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+:root {
+	--white: #fff;
+	--black: #000;
+	--bleu: #0050ff;
+	--brun: #f4ece6;
+	--brun-fonce: #e6dace;
+	--background-test: #49b;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loisir</title>
-</head>
+@font-face {
+	font-family: poppinssemibold;
+	src: url(./font/poppins-semibold.ttf);
+}
 
-<body style="background-color: black;">
-</body>
+@font-face {
+	font-family: avenirlight;
+	src: url(./font/AvenirLight.ttf);
+}
 
-</html>
+@font-face {
+	font-family: avenirblack;
+	src: url(./font/AvenirLTStd-Black.otf);
+}
+
+.back {
+	background-color: var(--brun-fonce);
+	width: 40%;
+	height: 700px;
+}

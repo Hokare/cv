@@ -6,13 +6,20 @@
 	--brun-fonce: #e6dace;
 	--background-test: #49b;
 }
+
 @font-face {
 	font-family: poppinssemibold;
 	src: url(./font/poppins-semibold.ttf);
 }
+
 @font-face {
 	font-family: avenirlight;
 	src: url(./font/AvenirLight.ttf);
+}
+
+@font-face {
+	font-family: avenirblack;
+	src: url(./font/AvenirLTStd-Black.otf);
 }
 
 body {
@@ -35,7 +42,7 @@ body {
 	padding: 0 10px 0 10px;
 }
 
-.namenav h1{
+.namenav h1 {
 	font-size: 25px;
 	font-weight: 1000;
 	font-family: 'poppinssemibold';
@@ -46,7 +53,7 @@ body {
 	font-weight: 100;
 }
 
-.menu a{
+.menu a {
 	margin-right: 15px;
 	font-size: 15px;
 	text-decoration: none;
@@ -72,11 +79,39 @@ footer {
 	justify-content: space-between;
 }
 
-.divicon img {
+.footeraicon img {
 	width: 25px;
-	margin: 5px;
+	margin: 0 5px 0 5px;
+	transition-duration: 0.2s;
+}
+
+.footeraicon img:hover {
+	width: 28px;
 }
 
 .footerdivmarge {
-	margin: 5px 30px 5px 30px;	
+	margin: 5px 30px 5px 30px;
+}
+
+.footerp {
+	font-family: 'avenirblack';
+	font-size: 14px;
+}
+
+.footeratext {
+	font-size: 15px;
+	text-decoration: none;
+	color: var(--black);
+}
+
+.footericon {
+	transition-duration: 0.4s;
+}
+
+.animationtext {
+	transition-duration: 0.4s;
+}
+.animationtext:hover {
+	font-size: 16px;
+	color: var(--bleu);
 }

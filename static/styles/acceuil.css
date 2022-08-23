@@ -6,6 +6,7 @@
     --brun-fonce: #e6dace;
     --background-test: #49b;
 }
+
 @font-face {
     font-family: poppinssemibold;
     src: url(./font/poppins-semibold.ttf);
@@ -14,6 +15,11 @@
 @font-face {
     font-family: avenirlight;
     src: url(./font/AvenirLight.ttf);
+}
+
+@font-face {
+    font-family: avenirblack;
+    src: url(./font/AvenirLTStd-Black.otf);
 }
 
 .back {
