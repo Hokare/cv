@@ -38,7 +38,7 @@
     max-width: 450px;
     min-height: 540px;
     top: 170px;
-    left: 25%;
+    left: calc(40% - 300px);
     align-items: center;
     text-align: center;
 }
@@ -90,3 +90,10 @@
     height: 30px;
     margin: 0 10px 0 10px;
 }
+
+.deplacement {
+    position: absolute;
+    left: 55%;
+    top: 170px;
+}
+
