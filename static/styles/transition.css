@@ -1,0 +1,8 @@
+.transition-fade {
+    transition: 5s;
+    transform: translateX(100%);
+}
+
+html.is-animating .transition-fade {
+    transform: translateX(50%);
+}
