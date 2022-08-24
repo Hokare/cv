@@ -27,7 +27,6 @@
 	position: relative;
 	background-color: var(--brun-fonce);
 	height: 710px;
-	width: 40%;
 }
 
 .info {
@@ -163,7 +162,7 @@
 }
 
 .divcv:hover {
-	background-color: var(--white);
+	background-color: transparent;
 }
 
 .divlistecv {
