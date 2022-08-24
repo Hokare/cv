@@ -130,6 +130,8 @@
 	border: 1px solid var(--black);
 	color: var(--black);
 	margin: 18px 20px;
+	padding: 0 10px;
+	border-radius: 15px;
 }
 
 .divliste {
@@ -138,4 +140,28 @@
 	font-size: 16px;
 	font-weight: 600;
 	margin: 3px auto;
+}
+
+.divcv {
+	border: 2px solid var(--bleu);
+	background-color: var(--bleu);
+	margin: 18px 20px;
+	padding: 0 10px;
+	border-radius: 15px;
+	transition: 1s;
+}
+
+.divcv:hover {
+	background-color: var(--white);
+}
+
+.divlistecv {
+	color: var(--white);
+	width: 100%;
+	padding: 0;
+	transition: 0.8s;
+}
+
+.divlistecv:hover {
+	color: var(--black);
 }
