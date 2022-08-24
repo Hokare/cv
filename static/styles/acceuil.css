@@ -1,99 +1,141 @@
 :root {
-    --white: #fff;
-    --black: #000;
-    --bleu: #0050ff;
-    --brun: #f4ece6;
-    --brun-fonce: #e6dace;
-    --background-test: #49b;
+	--white: #fff;
+	--black: #000;
+	--bleu: #0050ff;
+	--brun: #f4ece6;
+	--brun-fonce: #e6dace;
+	--background-test: #49b;
 }
 
 @font-face {
-    font-family: poppinssemibold;
-    src: url(./font/poppins-semibold.ttf);
+	font-family: poppinssemibold;
+	src: url(./font/poppins-semibold.ttf);
 }
 
 @font-face {
-    font-family: avenirlight;
-    src: url(./font/AvenirLight.ttf);
+	font-family: avenirlight;
+	src: url(./font/AvenirLight.ttf);
 }
 
 @font-face {
-    font-family: avenirblack;
-    src: url(./font/AvenirLTStd-Black.otf);
+	font-family: avenirblack;
+	src: url(./font/AvenirLTStd-Black.otf);
 }
 
 .back {
-    z-index: -1;
-    position: relative;
-    background-color: var(--brun-fonce);
-    height: 710px;
-    width: 40%;
+	z-index: -1;
+	position: relative;
+	background-color: var(--brun-fonce);
+	height: 710px;
+	width: 40%;
 }
 
 .info {
-    position: absolute;
-    background-color: var(--brun);
-    width: 22%;
-    min-width: 350px;
-    max-width: 450px;
-    min-height: 540px;
-    top: 170px;
-    left: calc(40% - 300px);
-    align-items: center;
-    text-align: center;
+	position: absolute;
+	background-color: var(--brun);
+	width: 22%;
+	min-width: 350px;
+	max-width: 450px;
+	min-height: 540px;
+	top: 170px;
+	left: calc(40% - 300px);
+	align-items: center;
+	text-align: center;
 }
 
 .infocentrage {
-    margin-top: 15px;
+	margin-top: 15px;
 }
 
 .photo {
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
+	width: 250px;
+	height: 250px;
+	border-radius: 100%;
 }
 
 .prenomnom {
-    font-family: 'poppinssemibold';
-    font-size: 22px;
+	font-family: 'poppinssemibold';
+	font-size: 22px;
 }
 
 .tiret {
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid var(--bleu);
-    width: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid var(--bleu);
+	width: 50px;
 }
 
 .infoetud {
-    font-family: 'avenirlight';
-    font-size: 18px;
-    font-weight: 100;
+	font-family: 'avenirlight';
+	font-size: 18px;
+	font-weight: 100;
 }
 
 .divlesreseau {
-    position: absolute;
-    background-color: var(--white);
-    width: 100%;
-    height: 55px;
-    bottom: 0;
+	position: absolute;
+	background-color: var(--white);
+	width: 100%;
+	height: 55px;
+	bottom: 0;
 }
 
 .lesreseau {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .infoicon img {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px 0 10px;
+	width: 30px;
+	height: 30px;
+	margin: 0 10px 0 10px;
 }
 
 .deplacement {
-    position: absolute;
-    left: 55%;
-    top: 170px;
+	position: absolute;
+	left: 50%;
+	top: 170px;
 }
 
+.bonjour {
+	font-family: 'avenirblack';
+	font-size: 120px;
+	margin: 0;
+	text-align: center;
+}
+
+.divdeplacement {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.listedeplacement {	
+	padding: 0;
+}
+
+.listedeplacement a {
+	text-align: center;
+	text-decoration: none;
+	color: var(--black);
+}
+
+.listedeplacement li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.divadivliste {
+	border: 1px solid var(--black);
+	color: var(--black);
+	margin: 18px 20px;
+}
+
+.divliste {
+	width: 128px;
+	font-family: 'avenirlight';
+	font-size: 16px;
+	font-weight: 600;
+	margin: 3px auto;
+}
