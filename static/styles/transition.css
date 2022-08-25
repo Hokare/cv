@@ -4,5 +4,5 @@
 }
 
 html.is-animating .transition-fade {
-    width: 0;
+    width: 0px;
 }
