@@ -1,6 +1,2 @@
-import Swup from 'swup'
-import SwupFadeTheme from '@swup/fade-theme';
-
-const swup = new Swup({
-  plugins: [new SwupFadeTheme()]
-});
+const swup = new Swup();
+console.log("sub")

@@ -128,7 +128,6 @@
 .divadivliste {
 	border: 1px solid var(--black);
 	margin: 18px 20px;
-	padding: 0 10px;
 	border-radius: 15px;
 	transition: 1s;
 }
@@ -156,7 +155,6 @@
 	border: 2px solid var(--bleu);
 	background-color: var(--bleu);
 	margin: 18px 20px;
-	padding: 0 10px;
 	border-radius: 15px;
 	transition: 1s;
 }
