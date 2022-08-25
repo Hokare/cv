@@ -1,8 +1,0 @@
-.transition-fade {
-    transition: 5s;
-    width: 40%;
-}
-
-html.is-animating .transition-fade {
-    width: 0px;
-}
