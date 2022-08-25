@@ -1,8 +1,8 @@
-.transition-fade {
-    transition: 5s;
+.transition-accueil {
+    transition: 1s;
     width: 40%;
 }
 
-html.is-animating .transition-fade {
-    width: 0px;
+html.is-animating .transition-accueil {
+    width: 100%;
 }

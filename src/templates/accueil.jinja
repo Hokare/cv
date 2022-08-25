@@ -13,13 +13,13 @@
 			<div></div>
 			<div class="lesreseau">
 				<a class="infoicon linkedin" href="https://www.linkedin.com/in/martin-barbey/" target="_blank">
-					<img class="iconlinkedin" src="./static/icon/linkedin.png" alt="Linkedin">
+					<img class="iconlinkedin" src="{{ url_for('static', filename='icon/linkedin.png') }}" alt="Linkedin">
 				</a>
 				<a class="infoicon github" href="https://github.com/Hokare" target="_blank">
-					<img class="icongithub" src="./static/icon/github.png" alt="Github">
+					<img class="icongithub" src="{{ url_for('static', filename='icon/github.png') }}" alt="Github">
 				</a>
 				<a class="infoicon gitlab" href="https://gitlab.com/Hokare" target="_blank">
-					<img class="icongitlab" src="./static/icon/gitlab.png" alt="Gitlab">
+					<img class="icongitlab" src="{{ url_for('static', filename='icon/gitlab.png') }}" alt="Gitlab">
 				</a>
 			</div>
 			<div></div>
@@ -33,42 +33,42 @@
 				<ul class="listedeplacement">
 					<li>
 						<div class="divadivliste">
-							<a href="./static/templates/experiences.html">
+							<a href="{{ url_for('experiences') }}">
 								<div class="divliste">Experiences</div>
 							</a>
 						</div>
 						<div class="divadivliste">
-							<a href="./static/templates/competences.html">
+							<a href="{{ url_for('competences') }}">
 								<div class="divliste">Compétences</div>
 							</a>
 						</div>
 					</li>
 					<li>
 						<div class="divadivliste">
-							<a href="./static/templates/scolarité.html">
+							<a href="{{ url_for('scolarite') }}">
 								<div class="divliste">Scolarité</div>
 							</a>
 						</div>
 						<div class="divadivliste">
-							<a href="./static/templates/diplomes.html">
+							<a href="{{ url_for('diplomes') }}">
 								<div class="divliste">Diplômes</div>
 							</a>
 						</div>
 					</li>
 					<li>
 						<div class="divadivliste">
-							<a href="./static/templates/projets.html">
+							<a href="{{ url_for('projets') }}">
 								<div class="divliste">Projets</div>
 							</a>
 						</div>
 						<div class="divadivliste">
-							<a href="./static/templates/loisirs.html">
+							<a href="{{ url_for('loisirs') }}">
 								<div class="divliste">Loisirs</div>
 							</a>
 						</div>
 					</li>
 					<div class="divadivliste divcv">
-						<a href="./static/document/Martin Barbey.pdf" target="_blank">
+						<a href="{{ url_for('MartinBarbey') }}" target="_blank">
 							<div class="divlistecv">CV</div>
 						</a>
 					</div>
@@ -77,6 +77,6 @@
 			<div></div>
 		</div>
 	</div>
-	<div id="swup" class="back  transition-fade"></div>
+	<div id="swup" class="back  transition-accueil"></div>
 </main>
 {% endblock %}
