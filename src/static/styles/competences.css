@@ -2,6 +2,8 @@
     --white: #fff;
     --black: #000;
     --bleu: #0050ff;
+    --bleu-clair1: #1652b3;
+    --bleu-clair2: #2558cb;
     --brun: #f4ece6;
     --brun-fonce: #e6dace;
     --background-test: #49b;
@@ -24,6 +26,55 @@
 
 .back {
     background-color: var(--brun-fonce);
-    width: 40%;
-    height: 700px;
+    width: 100%;
+    height: 1500px;
 }
+
+.titre {
+    font-family: 'avenirblack';
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.toutcontenu {
+    position: absolute;
+    width: 100%;
+}
+
+.container {
+    width: clamp(750px, 50%, 1000px);
+    background-color: var(--white);
+    margin: 0 auto 40px auto;
+    padding: 20px 35px;
+}
+
+.namecompetences {
+    width: 100%;
+    margin-top: 0px;
+    font-family: 'avenirblack';
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--bleu);
+}
+
+.barcompetences {
+    border-radius: 20px;
+    width: 100%;
+    height: 12px;
+    background-color: var(--brun);
+}
+
+.progressionbarcompetences {
+    z-index: 2;
+    border-radius: 20px;
+    height: 12px;
+    background-color: var(--brun-fonce);
+}
+
+.pour90 {width: 90%;}
+.pour80 {width: 80%;}
+.pour70 {width: 70%;}
+.pour60 {width: 60%;}
+.pour50 {width: 50%;}

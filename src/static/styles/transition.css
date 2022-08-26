@@ -1,8 +1,80 @@
+.delay06s {
+    transition-delay: 0.6s;
+}
+
+.delay04s {
+    transition-delay: 0.4s;
+}
+
+.delay02s {
+    transition-delay: 0.2s;
+}
+
+/* accueil */
+
 .transition-accueil {
     transition: 1s;
     width: 40%;
+    height: 710px;
 }
 
 html.is-animating .transition-accueil {
     width: 100%;
 }
+
+.transition-info {
+    transition: 0.6s;
+    height: 540px;
+}
+
+html.is-animating .transition-info {
+    height: 0px;
+}
+
+.transition-infocentrage {
+    transition-delay: 0.4s;
+    transition: 0.1s;
+    opacity: 1;
+}
+
+html.is-animating .transition-infocentrage {
+    opacity: 0;
+}
+
+.transition-divlesreseau {
+    transition-duration: 0.4s;
+    width: 100%;
+}
+
+html.is-animating .transition-divlesreseau {
+    width: 0px;
+}
+
+.transition-lesreseau {
+    transition-duration: 0.4s;
+    opacity: 1;
+}
+
+html.is-animating .transition-lesreseau {
+    opacity: 0;
+}
+
+.transition-deplacement {
+    z-index: 1;
+}
+
+html.is-animating .transition-deplacement {
+    z-index: -2;
+}
+
+/* experiences */
+
+/* competences */
+
+/* scolarite */
+
+/* diplomes */
+
+/* projets */
+
+/* loisirs */

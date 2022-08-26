@@ -8,7 +8,6 @@
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='icon/homme-daffaire1.png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/transition.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/accueil.css') }}">
     <title>CV Martin Barbey</title>
 </head>
 
@@ -21,8 +20,8 @@
             <h2>/ Etudiant en Systèmes Numériques</h2>
         </div>
         <div class="nav menu">
-            <a class="animationtext" href="{{ url_for('accueil') }}">Acceuil</a>
-            <a class="animationtext" href="{{ url_for('experiences') }}">Experiences</a>
+            <a class="animationtext" href="{{ url_for('accueil') }}">Accueil</a>
+            <a class="animationtext" href="{{ url_for('experiences') }}">Expériences</a>
             <a class="animationtext" href="{{ url_for('competences') }}">Compétences</a>
             <a class="animationtext" href="{{ url_for('scolarite') }}">Scolarité</a>
             <a class="animationtext" href="{{ url_for('diplomes') }}">Diplômes</a>
@@ -31,8 +30,11 @@
         </div>
     </nav>
 
-    {% block content %}{% endblock %}
-
+    <main id="swup" class="page">
+        {% block css %}{% endblock %}
+        {% block content %}{% endblock %}
+    </main>
+    
     <footer class="piedpage">
         <div></div>
         <div class="piedpage">

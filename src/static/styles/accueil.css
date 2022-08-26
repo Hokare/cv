@@ -26,16 +26,12 @@
 	z-index: -1;
 	position: relative;
 	background-color: var(--brun-fonce);
-	height: 710px;
 }
 
 .info {
 	position: absolute;
 	background-color: var(--brun);
-	width: 22%;
-	min-width: 350px;
-	max-width: 450px;
-	min-height: 540px;
+	width: clamp(350px, 22%, 450px) ;  
 	top: 170px;
 	left: calc(40% - 300px);
 	align-items: center;
@@ -73,7 +69,6 @@
 .divlesreseau {
 	position: absolute;
 	background-color: var(--white);
-	width: 100%;
 	height: 55px;
 	bottom: 0;
 }

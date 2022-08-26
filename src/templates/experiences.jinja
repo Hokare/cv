@@ -1,7 +1,137 @@
 {% extends "base.jinja" %}
 
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/experiences.css') }}">
+{% endblock %}
+
 {% block content %}
-<main class="page">
-	<div id="swup" class="back  transition-fade"></div>
-</main>
+<div class="toutcontenu">
+	<h2 class="titre">Expériences</h2>
+	<div class="container containersis">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameentreprise">Service d'incendie et de secours 67</h3>
+				<div class="flexcontainer">
+					<div class="durestage">
+						Stage de 1 mois
+					</div>
+					<div class="lieustage">
+						Wolfisheim - France
+					</div>
+				</div>
+			</div>
+			<div><img src="{{ url_for('static', filename='images/logo-sdis67.png') }}" alt="logo-sdis67"></div>
+		</div>
+		<div class="mission">
+			Missions réalisées :
+			<ul>
+				<li>
+					Installation d'un Windows Serveur 2022
+					<ul>- Installation d'un Active Directory</ul>
+					<ul>- Installation d'un Domain Name System</ul>
+					<ul>- Installation d'un Dynamic Host Configuration Protocol</ul>
+				</li>
+				<li>Maintenance d'appareil informatique​</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="container containereberhardt">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameentreprise">Eberhardt</h3>
+				<div class="flexcontainer">
+					<div class="durestage">
+						Stage de 3 semaines
+					</div>
+					<div class="lieustage">
+						Strasbourg - France
+					</div>
+				</div>
+			</div>
+			<div><img src="{{ url_for('static', filename='images/eberhardt.png') }}" alt="logo-eberhardt"></div>
+		</div>
+		<div class="mission">
+			Missions réalisées :
+			<ul>
+				<li>Installation de postes de travail pour les employés (écran, ordinateur, téléphone fixe)</li>
+				<li>Installation de Windows sur les ordinateurs ainsi que des logiciels nécessaires aux employés​</li>
+				<li>Décablage de certain serveurs de l'entreprise​</li>
+				<li>Création d'un programme (Batch, PowerShell) pour simplifer l'installation de logiciels et la modification des paramètres.​</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container containereffinger">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameentreprise">Electricité Effinger</h3>
+				<div class="flexcontainer">
+					<div class="durestage">
+						Stage de 1 semaines
+					</div>
+					<div class="lieustage">
+						Strasbourg, Illkirch - France
+					</div>
+				</div>
+			</div>
+			<div><img src="{{ url_for('static', filename='images/electricite-effinger.png') }}" alt="logo-electricité-effinger"></div>
+		</div>
+		<div class="mission">
+			Missions réalisées :
+			<ul>
+				<li>Installation de prises, d'interrupteurs, de lumières chez des particuliers</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container containerbongard">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameentreprise">Bongard</h3>
+				<div class="flexcontainer">
+					<div class="durestage">
+						Stage de 1 semaines
+					</div>
+					<div class="lieustage">
+						Holtzheim - France
+					</div>
+				</div>
+			</div>
+			<div><img src="{{ url_for('static', filename='images/bongard.png') }}" alt="logo-bongard"></div>
+		</div>
+		<div class="mission">
+			Missions réalisées :
+			<ul>
+				<li>Découverte du fonctionnement d'une entreprise</li>
+				<li>Découverte des differents métiers de l'entreprise</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container containeresprit">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameentreprise">Esprit Paysan</h3>
+				<div class="flexcontainer">
+					<div class="durestage">
+						Stage de 1 semaines
+					</div>
+					<div class="lieustage">
+						Vesoul - France
+					</div>
+				</div>
+			</div>
+			<div><img src="{{ url_for('static', filename='images/esprit-paysan.png') }}" alt="logo-esprit-paysan"></div>
+		</div>
+		<div class="mission">
+			Missions réalisées :
+			<ul>
+				<li>Préparation de pâte à pain et de viennoiseries</li>
+				<li>Cuisson des pains et des viennoiseries</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="back transition-experiences"></div>
 {% endblock %}

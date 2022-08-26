@@ -1,5 +1,76 @@
 {% extends "base.jinja" %}
 
-{% block content %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/diplomes.css') }}">
+{% endblock %}
 
+{% block content %}
+<div class="toutcontenu">
+	<h2 class="titre">Diplômes</h2>
+	<div class="container">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="namediplome">Brevet d'études professionnelles - BEP</h3>
+				<div class="flexcontainer">
+					<div class="datediplomes">
+						2021
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+	<div class="container">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="namediplome">Prévention et Secours Civiques de Niveau 1 - PSC1</h3>
+				<div class="flexcontainer">
+					<div class="datediplomes">
+						-
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+	<div class="container">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="namediplome">Brevet des collèges avec mention</h3>
+				<div class="flexcontainer">
+					<div class="datediplomes">
+						2019
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+	<div class="container">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="namediplome">Attestation Scolaire de Sécurité Routière 2 - ASSR2</h3>
+				<div class="flexcontainer">
+					<div class="datediplomes">
+						2019
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+    <div class="container">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="namediplome">Attestation Scolaire de Sécurité Routière 1 - ASSR1</h3>
+				<div class="flexcontainer">
+					<div class="datediplomes">
+						2016
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+<div class="back transition-diplomes"></div>
 {% endblock %}

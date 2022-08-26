@@ -1,5 +1,59 @@
 {% extends "base.jinja" %}
 
-{% block content %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/loisirs.css') }}">
+{% endblock %}
 
+{% block content %}
+<div class="toutcontenu">
+	<h2 class="titre">Loisirs</h2>
+	<div class="container">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameloisirs">Informatique</h3>
+			</div>
+		</div>
+    </div>
+    
+	<div class="container">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameloisirs">Scoutisme</h3>
+			</div>
+		</div>
+    </div>
+    
+	<div class="container">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameloisirs">Cyclisme</h3>
+			</div>
+		</div>
+    </div>
+    
+	<div class="container">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameloisirs">Rouler</h3>
+			</div>
+		</div>
+    </div>
+    
+	<div class="container">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameloisirs">Escalade</h3>
+			</div>
+		</div>
+    </div>
+    
+	<div class="container">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameloisirs">Bricolage</h3>
+			</div>
+		</div>
+    </div>
+</div>
+<div class="back transition-diplomes"></div>
 {% endblock %}

@@ -1,5 +1,73 @@
 {% extends "base.jinja" %}
 
-{% block content %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/competences.css') }}">
+{% endblock %}
 
+{% block content %}
+<div class="toutcontenu">
+	<h2 class="titre">Compétences</h2>
+
+	<div class="container">
+		<div class="topcontainer">
+			<h3 class="namecompetences">Travail manuel</h3>
+			<div class="barcompetences"><div class="progressionbarcompetences pour90"></div></div>
+        </div>
+	</div>
+    <div class="container">
+		<div class="topcontainer">
+			<h3 class="namecompetences">Travail en équipe</h3>
+			<div class="barcompetences"><div class="progressionbarcompetences pour70"></div></div>
+        </div>
+	</div>
+    <div class="container">
+		<div class="topcontainer">
+			<h3 class="namecompetences">Autonomie</h3>
+			<div class="barcompetences"><div class="progressionbarcompetences pour70"></div></div>
+        </div>
+	</div>
+    <div class="container">
+		<div class="topcontainer">
+			<h3 class="namecompetences">Arduino (C++)</h3>
+			<div class="barcompetences"><div class="progressionbarcompetences pour60"></div></div>
+        </div>
+	</div>
+    <div class="container">
+		<div class="topcontainer">
+			<h3 class="namecompetences">Html Css</h3>
+			<div class="barcompetences"><div class="progressionbarcompetences pour80"></div></div>
+        </div>
+	</div>
+    <div class="container">
+		<div class="topcontainer">
+			<h3 class="namecompetences">Python</h3>
+			<div class="barcompetences"><div class="progressionbarcompetences pour50"></div></div>
+        </div>
+	</div>
+    <div class="container">
+		<div class="topcontainer">
+			<h3 class="namecompetences">Batch, PowerShell</h3>
+			<div class="barcompetences"><div class="progressionbarcompetences pour60"></div></div>
+        </div>
+	</div>
+    <div class="container">
+		<div class="topcontainer">
+			<h3 class="namecompetences">Impression 3D</h3>
+			<div class="barcompetences"><div class="progressionbarcompetences pour70"></div></div>
+        </div>
+	</div>
+    <div class="container">
+		<div class="topcontainer">
+			<h3 class="namecompetences">Adobe</h3>
+			<div class="barcompetences"><div class="progressionbarcompetences pour50"></div></div>
+        </div>
+	</div>
+    <div class="container">
+		<div class="topcontainer">
+			<h3 class="namecompetences">Office</h3>
+			<div class="barcompetences"><div class="progressionbarcompetences pour80"></div></div>
+        </div>
+	</div>
+</div>
+<div class="back transition-experiences"></div>
 {% endblock %}

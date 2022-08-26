@@ -1,5 +1,47 @@
 {% extends "base.jinja" %}
 
-{% block content %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/scolarite.css') }}">
+{% endblock %}
 
+{% block content %}
+<div class="toutcontenu">
+	<h2 class="titre">Scolarité</h2>
+	<div class="container">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameecole">Lycée Gutenberg</h3>
+				<div class="flexcontainer">
+					<div class="durescolarite">
+						De 2019 à 2022
+					</div>
+					<div class="lieuscolarite">
+						Illkirch - France
+					</div>
+				</div>
+			</div>
+			<div><img src="{{ url_for('static', filename='images/gutenberg.png') }}" alt="gutenberg"></div>
+		</div>
+		<div class="mission">
+			Baccalauréat Professionnel Systèmes Numeriques (SN), option C, Réseaux Informatiques et Système Communicants (RISC).
+		</div>
+	</div>
+    <div class="container containersis">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameecole">Collège du Parc</h3>
+				<div class="flexcontainer">
+					<div class="durescolarite">
+						De 2019 à 2022
+					</div>
+					<div class="lieuscolarite">
+						Illkirch - France
+					</div>
+				</div>
+			</div>
+			<div><img src="{{ url_for('static', filename='images/college-du-parc.png') }}" alt="college-du-parc"></div>
+		</div>
+	</div>
+</div>
+<div class="back transition-scolarite"></div>
 {% endblock %}

@@ -123,3 +123,17 @@ footer {
 	font-size: 16px;
 	color: var(--bleu);
 }
+
+body::-webkit-scrollbar {
+	width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+	background: var(--brun-fonce);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--white);
+	border-radius: 25px;
+	border: 1px solid var(--black);
+}

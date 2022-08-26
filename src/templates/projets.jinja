@@ -1,5 +1,9 @@
 {% extends "base.jinja" %}
 
-{% block content %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/loisirs.css') }}">
+{% endblock %}
 
+{% block content %}
+<div class="back"></div>
 {% endblock %}

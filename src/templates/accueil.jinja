@@ -1,82 +1,84 @@
 {% extends "base.jinja" %}
 
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/accueil.css') }}">
+{% endblock %}
+
 {% block content %}
-<main class="page">
-	<div class="info">
-		<div class="infocentrage">
-			<div><img class="photo" src="./static/images/futurphoto.png" alt="Martin"></div>
-			<h3 class="prenomnom">Martin<br>Barbey</h3>
-			<div class="tiret"></div>
-			<h4 class="infoetud">Etudiant en Systèmes Numériques</h4>
-		</div>
-		<div class="divlesreseau lesreseau">
-			<div></div>
-			<div class="lesreseau">
-				<a class="infoicon linkedin" href="https://www.linkedin.com/in/martin-barbey/" target="_blank">
-					<img class="iconlinkedin" src="{{ url_for('static', filename='icon/linkedin.png') }}" alt="Linkedin">
-				</a>
-				<a class="infoicon github" href="https://github.com/Hokare" target="_blank">
-					<img class="icongithub" src="{{ url_for('static', filename='icon/github.png') }}" alt="Github">
-				</a>
-				<a class="infoicon gitlab" href="https://gitlab.com/Hokare" target="_blank">
-					<img class="icongitlab" src="{{ url_for('static', filename='icon/gitlab.png') }}" alt="Gitlab">
-				</a>
-			</div>
-			<div></div>
-		</div>
+<div class="info transition-info">
+	<div class="infocentrage transition-infocentrage">
+		<div><img class="photo" src="./static/images/futurphoto.png" alt="Martin"></div>
+		<h3 class="prenomnom">Martin<br>Barbey</h3>
+		<div class="tiret"></div>
+		<h4 class="infoetud">Etudiant en Systèmes Numériques</h4>
 	</div>
-	<div class="deplacement">
-		<div class="bonjour">Enchanté</div>
-		<div class="divdeplacement">
-			<div></div>
-			<div>
-				<ul class="listedeplacement">
-					<li>
-						<div class="divadivliste">
-							<a href="{{ url_for('experiences') }}">
-								<div class="divliste">Experiences</div>
-							</a>
-						</div>
-						<div class="divadivliste">
-							<a href="{{ url_for('competences') }}">
-								<div class="divliste">Compétences</div>
-							</a>
-						</div>
-					</li>
-					<li>
-						<div class="divadivliste">
-							<a href="{{ url_for('scolarite') }}">
-								<div class="divliste">Scolarité</div>
-							</a>
-						</div>
-						<div class="divadivliste">
-							<a href="{{ url_for('diplomes') }}">
-								<div class="divliste">Diplômes</div>
-							</a>
-						</div>
-					</li>
-					<li>
-						<div class="divadivliste">
-							<a href="{{ url_for('projets') }}">
-								<div class="divliste">Projets</div>
-							</a>
-						</div>
-						<div class="divadivliste">
-							<a href="{{ url_for('loisirs') }}">
-								<div class="divliste">Loisirs</div>
-							</a>
-						</div>
-					</li>
-					<div class="divadivliste divcv">
-						<a href="{{ url_for('MartinBarbey') }}" target="_blank">
-							<div class="divlistecv">CV</div>
+	<div class="divlesreseau lesreseau delay06s transition-divlesreseau">
+		<div></div>
+		<div class="lesreseau delay04s transition-lesreseau">
+			<a class="infoicon linkedin" href="https://www.linkedin.com/in/martin-barbey/" target="_blank">
+				<img class="iconlinkedin" src="{{ url_for('static', filename='icon/linkedin.png') }}" alt="Linkedin">
+			</a>
+			<a class="infoicon github" href="https://github.com/Hokare" target="_blank">
+				<img class="icongithub" src="{{ url_for('static', filename='icon/github.png') }}" alt="Github">
+			</a>
+			<a class="infoicon gitlab" href="https://gitlab.com/Hokare" target="_blank">
+				<img class="icongitlab" src="{{ url_for('static', filename='icon/gitlab.png') }}" alt="Gitlab">
+			</a>
+		</div>
+		<div></div>
+	</div>
+</div>
+<div class="deplacement transition-deplacement">
+	<div class="bonjour">Enchanté</div>
+	<div class="divdeplacement">
+		<div></div>
+		<div>
+			<ul class="listedeplacement">
+				<li>
+					<div class="divadivliste">
+						<a href="{{ url_for('experiences') }}">
+							<div class="divliste">Expériences</div>
 						</a>
 					</div>
-				</ul>
-			</div>
-			<div></div>
+					<div class="divadivliste">
+						<a href="{{ url_for('competences') }}">
+							<div class="divliste">Compétences</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div class="divadivliste">
+						<a href="{{ url_for('scolarite') }}">
+							<div class="divliste">Scolarité</div>
+						</a>
+					</div>
+					<div class="divadivliste">
+						<a href="{{ url_for('diplomes') }}">
+							<div class="divliste">Diplômes</div>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div class="divadivliste">
+						<a href="{{ url_for('projets') }}">
+							<div class="divliste">Projets</div>
+						</a>
+					</div>
+					<div class="divadivliste">
+						<a href="{{ url_for('loisirs') }}">
+							<div class="divliste">Loisirs</div>
+						</a>
+					</div>
+				</li>
+				<div class="divadivliste divcv">
+					<a href="{{ url_for('MartinBarbey') }}" target="_blank">
+						<div class="divlistecv">CV</div>
+					</a>
+				</div>
+			</ul>
 		</div>
+		<div></div>
 	</div>
-	<div id="swup" class="back  transition-accueil"></div>
-</main>
+</div>
+<div class="back  transition-accueil"></div>
 {% endblock %}

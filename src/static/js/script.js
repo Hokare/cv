@@ -1,2 +1,2 @@
 const swup = new Swup();
-console.log("Bonjour!")
+console.log("Hello World")
