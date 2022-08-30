@@ -5,16 +5,16 @@
 {% endblock %}
 
 {% block content %}
-<div class="info transition-info">
-	<div class="infocentrage transition-infocentrage">
+<div class="info transition-info-info">
+	<div class="infocentrage">
 		<div><img class="photo" src="./static/images/futurphoto.png" alt="Martin"></div>
 		<h3 class="prenomnom">Martin<br>Barbey</h3>
 		<div class="tiret"></div>
 		<h4 class="infoetud">Etudiant en Systèmes Numériques</h4>
 	</div>
-	<div class="divlesreseau lesreseau delay06s transition-divlesreseau">
+	<div class="divlesreseau lesreseau">
 		<div></div>
-		<div class="lesreseau delay04s transition-lesreseau">
+		<div class="lesreseau">
 			<a class="infoicon linkedin" href="https://www.linkedin.com/in/martin-barbey/" target="_blank">
 				<img class="iconlinkedin" src="{{ url_for('static', filename='icon/linkedin.png') }}" alt="Linkedin">
 			</a>
@@ -28,7 +28,7 @@
 		<div></div>
 	</div>
 </div>
-<div class="deplacement transition-deplacement">
+<div class="deplacement">
 	<div class="bonjour">Enchanté</div>
 	<div class="divdeplacement">
 		<div></div>
@@ -80,5 +80,5 @@
 		<div></div>
 	</div>
 </div>
-<div class="back  transition-accueil"></div>
+<div class="back-accueil transition-back-accueil"></div>
 {% endblock %}

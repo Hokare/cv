@@ -1,9 +1,62 @@
 {% extends "base.jinja" %}
 
 {% block css %}
-<link rel="stylesheet" href="{{ url_for('static', filename='styles/loisirs.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/projets.css') }}">
 {% endblock %}
 
 {% block content %}
-<div class="back"></div>
+<div class="toutcontenu">
+	<h2 class="titre">Projets</h2>
+	<div class="container">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameprojets">Curriculum vitæ - CV</h3>
+				<div class="flexcontainer">
+					<div class="defprojets">
+						Mon CV en ligne.
+					</div>
+				</div>
+				<div></div>
+			</div>
+		</div>
+		<div class="liens">
+			<div>Lien : <a href="https://martin.barbey.page">https://martin.barbey.page</a></div>
+			<div>Github : <a href="https://github.com/Hokare/cv-martin-barbey">https://github.com/Hokare/cv-martin-barbey</a></div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameprojets">Site Web de configuration d'un Bot</h3>
+				<div class="flexcontainer">
+					<div class="defprojets">
+						Site pour configuré un bot dicord
+					</div>
+				</div>
+				<div></div>
+			</div>
+		</div>
+		<div class="liens">
+			<div>Lien : <a href="">---</a></div>
+			<div>Github : <a href="">---</a></div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="topcontainer flexcontainer">
+			<div class="infocontainer">
+				<h3 class="nameprojets">Projet de lycée</h3>
+				<div class="flexcontainer">
+					<div class="defprojets">
+						Création et fabrication d'un tableau d'affichage des scores avec deux autres camarades.
+					</div>
+				</div>
+				<div></div>
+			</div>
+		</div>
+		<div class="liens">
+			<div>Github : <a href="https://github.com/Hokare/scoreboard-project">https://github.com/Hokare/scoreboard-project</a></div>
+		</div>
+	</div>
+</div>
+<div class="back-projets"></div>
 {% endblock %}
