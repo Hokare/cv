@@ -1,5 +1,39 @@
-import Swup from 'swup';
+const wipe = document.querySelector('.wipe-transition');
+const allBandes = document.querySelectorAll('.bande');
+const TLAnim = new TimelineMax();
 
-const swup = new Swup();
+function delay(n) {
+  return new Promise((done) => {
+    setTimeout(() => {
+      done();
+    }, n)
+  })
+}
 
-console.log("Hello World")
+barba.init({
+
+  sync: true,
+
+  transitions: [
+    {
+      async leave(){
+
+        const done = this.async();
+
+        TLAnim.to(wipe, {left: '0%', ease: "power2.out", duration: 0.5});
+
+        await delay(500);
+        done();
+
+      },
+      enter(){
+
+        TLAnim
+        .to(wipe, {left: '100%', ease:"power2.in", duration: 0.5})
+        .set(wipe, {left: '-100%'})
+
+      }
+    }
+  ]
+
+})

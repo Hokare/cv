@@ -24,7 +24,9 @@
 
 .back-experiences {
 	background-color: var(--brun-fonce);
+	width: 100%;
 	min-height: calc(100vh - 100px - 87px);
+	height: 1620px;
 }
 
 .titre {

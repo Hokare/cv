@@ -126,6 +126,7 @@ footer {
 
 body::-webkit-scrollbar {
 	width: 6px;
+	height: 0px;
 }
 
 body::-webkit-scrollbar-track {

@@ -8,11 +8,10 @@
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='icon/homme-daffaire1.png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/transition.css') }}">
-    <script defer src="{{ url_for('static', filename='node_modules/swup/dist/swup.min.js') }}"></script>
     <title>CV Martin Barbey</title>
 </head>
 
-<body>
+<body data-barba="wrapper">
     <nav class="nav bar">
         <div class="nav namenav">
             <a href="{{ url_for('accueil') }}">
@@ -30,8 +29,9 @@
             <a class="animationtext" href="{{ url_for('loisirs') }}">Loisirs</a>
         </div>
     </nav>
+    <div class="wipe-transition"></div>
 
-    <main id="swup" class="page">
+    <main class="page" data-barba="container" data-barba-namespace="home">
         {% block css %}{% endblock %}
         {% block content %}{% endblock %}
     </main>
@@ -72,6 +72,10 @@
         </div>
         <div></div>
     </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>  
 </body>
 
 </html>

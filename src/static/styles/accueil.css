@@ -24,14 +24,17 @@
 
 .back-accueil {
 	z-index: -1;
-	min-height: calc(100vh - 100px - 87px);
 	background-color: var(--brun-fonce);
+	width: 40%;
+	min-height: calc(100vh - 100px - 87px);
+	height: 710px;
 }
 
 .info {
 	position: absolute;
 	background-color: var(--brun);
 	width: clamp(350px, 22%, 450px);
+	height: 540px;
 	top: 170px;
 	left: calc(40% - 300px);
 	align-items: center;
