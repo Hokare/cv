@@ -24,6 +24,7 @@
 
 .back-experiences {
 	background-color: var(--brun-fonce);
+	min-height: calc(100vh - 100px - 87px);
 }
 
 .titre {
@@ -44,7 +45,7 @@
 	background-color: var(--white);
 	margin: 0 auto 40px auto;
 	padding: 20px 35px;
-	box-shadow: 0 0 5px gray;
+	box-shadow: 0px 0px 20px 15px rgba(0, 0, 0, 0.1);
 }
 
 .container img {
