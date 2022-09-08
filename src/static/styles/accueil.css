@@ -22,11 +22,6 @@
 	src: url(./font/AvenirLTStd-Black.otf);
 }
 
-.animationtext {
-	font-size: 16px;
-	color: var(--bleu);
-}
-
 .back-accueil {
 	z-index: -1;
 	background-color: var(--brun-fonce);

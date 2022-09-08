@@ -4,7 +4,6 @@
     --bleu: #0050ff;
     --brun: #f4ece6;
     --brun-fonce: #e6dace;
-    --background-test: #49b;
 }
 
 .wipe-transition {
@@ -14,4 +13,5 @@
     background: linear-gradient(90deg, var(--brun), var(--brun-fonce));
     position: absolute;
     left: -100%;
+    border-right: 1px solid var(--white);
 }
