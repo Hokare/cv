@@ -25,7 +25,7 @@
 .back-experiences {
 	background-color: var(--brun-fonce);
 	width: 100%;
-	min-height: calc(100vh - 100px - 87px);
+	min-height: calc(100vh - 100px - 86px);
 	height: 1620px;
 }
 
@@ -81,4 +81,9 @@
 
 .mission {
 	font-size: 16px;
+}
+
+.animationtextexperiences {
+	font-size: 16px;
+	color: var(--bleu);
 }

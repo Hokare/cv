@@ -25,7 +25,7 @@
 .back-loisirs {
 	background-color: var(--brun-fonce);
 	width: 100%;
-	min-height: calc(100vh - 100px - 87px);
+	min-height: calc(100vh - 100px - 86px);
 	height: 750px;
 }
 
@@ -62,5 +62,11 @@
 	font-family: 'avenirblack';
 	font-size: 20px;
 	font-weight: 300;
+	color: var(--bleu);
+}
+
+.animationtextloisirs {
+	transition-duration: 0.3s;
+	font-size: 16px;
 	color: var(--bleu);
 }

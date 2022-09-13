@@ -26,8 +26,8 @@
 	z-index: -1;
 	background-color: var(--brun-fonce);
 	width: 40%;
-	min-height: calc(100vh - 100px - 87px);
-	height: 710px;
+	min-height: calc(100vh - 100px - 86px);
+	height: auto;
 }
 
 .info {
@@ -176,4 +176,53 @@
 
 .divlistecv:hover {
 	color: var(--black);
+}
+
+.animationtextaccueil {
+	font-size: 16px;
+	color: var(--bleu);
+}
+
+.tel {
+	height: 0;
+}
+
+.back-accueil-bande {
+	position: absolute;
+	z-index: 10;
+	background-color: var(--white);
+	height: 100%;
+	width: 80px;
+	transform: rotate(45deg);
+	top: 0;
+	right: auto;
+}
+
+@media screen and (max-width: 1100px) {
+	.back-accueil {
+		width: 100%;
+		min-height: calc(100vh - 100px - 86px);
+		height: 1200px;
+	}
+	.info {
+		position: relative;
+		display: inline-block;
+		top: 100px;
+		right: calc(50% + 350px / 2);
+		left: calc(50% - 350px / 2);
+	}
+
+	.deplacement {
+		position: relative;
+		margin-top: 0px;
+		right: auto;
+		left: auto;
+	}
+	
+}
+
+@media screen and (max-height: 820px) {
+	.back-accueil {
+		min-height: calc(820px - 100px - 86px);
+	}
 }

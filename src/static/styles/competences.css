@@ -27,7 +27,7 @@
 .back-competences {
     background-color: var(--brun-fonce);
     width: 100%;
-    min-height: calc(100vh - 100px - 87px);
+    min-height: calc(100vh - 100px - 86px);
     height: 1500px;
 }
 
@@ -80,3 +80,8 @@
 .pour70 { width: 70%;}
 .pour60 { width: 60%;}
 .pour50 { width: 50%;}
+
+.animationtextcompetences {
+    font-size: 16px;
+    color: var(--bleu);
+}

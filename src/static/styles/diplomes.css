@@ -25,7 +25,7 @@
 .back-diplomes {
 	background-color: var(--brun-fonce);
 	width: 100%;
-	min-height: calc(100vh - 100px - 87px);
+	min-height: calc(100vh - 100px - 86px);
 	height: 850px;
 }
 
@@ -68,4 +68,9 @@
 	font-family: 'avenirblack';
 	font-size: 14px;
 	font-weight: 200;
+}
+
+.animationtextdiplomes {
+	font-size: 16px;
+	color: var(--bleu);
 }

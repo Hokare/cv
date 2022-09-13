@@ -42,6 +42,9 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 10px 0 10px;
+	margin-top: auto;
+	margin-bottom: auto;
+	height: 100px;
 }
 
 .namenav h1 {
@@ -64,7 +67,6 @@ body {
 	margin-right: 15px;
 	font-size: 15px;
 	text-decoration: none;
-	color: var(--black);
 }
 
 footer {
@@ -75,7 +77,7 @@ footer {
 	box-shadow: 0 0 2px black;
 }
 
-.piedpage {
+.piedpage, .piedpage1 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -84,7 +86,7 @@ footer {
 
 .divicon {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .footeraicon img {
@@ -118,6 +120,7 @@ footer {
 
 .animationtext {
 	transition-duration: 0.4s;
+	color: var(--black);
 }
 .animationtext:hover {
 	font-size: 16px;
@@ -130,11 +133,41 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-	background: var(--brun-fonce);
+	background: rgba(255, 255, 255, 0);
 }
 
 body::-webkit-scrollbar-thumb {
 	background-color: var(--white);
 	border-radius: 25px;
 	border: 1px solid var(--black);
+}
+
+.bouton {
+	width: 0;
+}
+
+@media screen and (max-width: 1100px) {
+	.namenav h2{
+		visibility: hidden;
+		width: 0;
+	}
+	.piedpage {
+		display: block;
+		justify-content: space-around;
+	}
+	.footerdivmarge {
+		width: 300px;
+	}	
+}
+
+@media screen and (max-width: 820px) {
+	.menu {
+		visibility: hidden;
+		width: 0;
+	}
+	.bouton {
+		width: 20px;
+		height: 20px;
+		background-color: #000;
+	}
 }
